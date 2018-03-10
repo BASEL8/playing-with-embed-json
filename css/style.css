@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: linear-gradient(red, white, black, orange); }
+
+.container {
+  width: 100vw;
+  height: 80vh;
+  background: black;
+  margin: 100px auto;
+  display: flex;
+  box-shadow: 2px 5px 20px black; }
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+    background: #D0021B; }
+    .container .nav-btn #nav-icon1 {
+      width: 30px;
+      height: 40px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .5s ease-in-out;
+      -moz-transition: .5s ease-in-out;
+      -o-transition: .5s ease-in-out;
+      transition: .5s ease-in-out;
+      cursor: pointer; }
+      .container .nav-btn #nav-icon1 span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        background: #ffffff;
+        border-radius: 2px;
+        opacity: 1;
+        left: 10px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out; }
+      .container .nav-btn #nav-icon1 span:nth-child(1) {
+        top: 10px; }
+      .container .nav-btn #nav-icon1 span:nth-child(2) {
+        top: 20px; }
+      .container .nav-btn #nav-icon1 span:nth-child(3) {
+        top: 30px; }
+      .container .nav-btn #nav-icon1.open span:nth-child(1) {
+        top: 18px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg); }
+      .container .nav-btn #nav-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: 60px; }
+      .container .nav-btn #nav-icon1.open span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg); }
+    .container .nav-side {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .container .nav-side ul {
+        font-weight: 500;
+        padding: 10px; }
+        .container .nav-side ul li {
+          left: 0;
+          text-align: center;
+          margin-top: 20px; }
+          .container .nav-side ul li a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none; }
+            .container .nav-side ul li a:hover {
+              font-size: 25px;
+              transition: all .2s; }
+          .container .nav-side ul li:last-child {
+            position: absolute;
+            bottom: 20px;
+            width: auto;
+            transform: rotate(-90deg);
+            color: white; }
+  .container .nav-items {
+    width: 0; }
+    .container .nav-items ul {
+      padding-top: 30px;
+      width: 100%; }
+      .container .nav-items ul li {
+        padding: 30px;
+        height: 50px;
+        text-align: center;
+        color: white; }
+  .container .content {
+    height: 100%;
+    flex: 4;
+    overflow: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(255, 0, 89, 0.349)), url("../img/coffe.jpg");
+    background-position: 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; }
+    .container .content-a {
+      height: 100%;
+      margin-top: 30px;
+      width: 100%;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll; }
+    .container .content-1 {
+      margin-top: 0;
+      background: rgba(255, 0, 0, 0.301); }
+
+.show {
+  flex: 2; }
+
+.container-2 {
+  padding: 1px;
+  width: 90vw;
+  background: #602f2f;
+  margin: 10px auto;
+  display: flex;
+  box-shadow: 2px 5px 20px black; }
+  .container-2 .content {
+    height: 100%;
+    flex: 4;
+    overflow: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 255, 106, 0.349)), url("../img/dance.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; }
+    .container-2 .content-a {
+      height: 100%;
+      margin-top: 30px;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll; }
+      .container-2 .content-a-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between; }
+        .container-2 .content-a-top iframe {
+          width: 350px;
+          margin: 10px; }
+    .container-2 .content-1 {
+      margin-top: 0;
+      background: rgba(255, 0, 0, 0.301); }
+
+.container-3 {
+  width: 90vw;
+  padding: 1px;
+  background: #545454;
+  margin: 50px auto;
+  display: flex;
+  box-shadow: 2px 5px 20px black; }
+  .container-3 .content {
+    height: 100%;
+    flex: 4;
+    overflow: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.349)), url("../img/grill.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; }
+    .container-3 .content-a {
+      height: 100%;
+      margin-top: 30px;
+      width: 100%;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll; }
+      .container-3 .content-a-top, .container-3 .content-a-bottom {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between; }
+        .container-3 .content-a-top h3, .container-3 .content-a-bottom h3 {
+          background-color: red;
+          box-shadow: 2px 5px 20px #4d4c4c;
+          border-radius: 10px;
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px;
+          padding: 20px 10px; }
+        .container-3 .content-a-top iframe, .container-3 .content-a-bottom iframe {
+          margin: 10px;
+          width: 200px;
+          border-radius: 10px;
+          box-shadow: 2px 5px 20px #4d4c4c; }
+    .container-3 .content-1 {
+      margin-top: 0;
+      background: rgba(255, 0, 0, 0.301); }
+
+.container-4 {
+  width: 90vw;
+  padding: 1px;
+  background: #545454;
+  margin: 50px auto;
+  display: flex;
+  box-shadow: 2px 5px 20px black; }
+  .container-4 .content {
+    height: 100%;
+    flex: 4;
+    overflow: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.349)), url("../img/grill.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; }
+    .container-4 .content-a {
+      height: 100%;
+      margin-top: 30px;
+      width: 100%;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll; }
+      .container-4 .content-a-top, .container-4 .content-a-bottom {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between; }
+        .container-4 .content-a-top h3, .container-4 .content-a-bottom h3 {
+          background-color: red;
+          box-shadow: 2px 5px 20px #4d4c4c;
+          border-radius: 10px;
+          color: white;
+          text-transform: uppercase;
+          font-size: 15px;
+          padding: 20px 10px; }
+        .container-4 .content-a-top iframe, .container-4 .content-a-bottom iframe {
+          margin: 10px;
+          width: 200px;
+          border-radius: 10px;
+          box-shadow: 2px 5px 20px #4d4c4c; }
+    .container-4 .content-1 {
+      margin-top: 0;
+      background: rgba(255, 0, 0, 0.301); }
+
+.container-5 {
+  padding: 1px;
+  width: 90vw;
+  background: #602f2f;
+  margin: 10px auto;
+  display: flex;
+  box-shadow: 2px 5px 20px black; }
+  .container-5 .content {
+    height: 100%;
+    flex: 4;
+    overflow: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 255, 106, 0.349)), url("../img/dance.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; }
+    .container-5 .content-a {
+      height: 100%;
+      margin-top: 30px;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll; }
+      .container-5 .content-a-top {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between; }
+        .container-5 .content-a-top iframe {
+          width: 350px;
+          margin: 10px; }
+    .container-5 .content-1 {
+      margin-top: 0;
+      background: rgba(255, 0, 0, 0.301); }
